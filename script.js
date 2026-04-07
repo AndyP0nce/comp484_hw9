@@ -93,6 +93,9 @@ document.getElementById("numberConversionOutput").innerHTML = finalResult;
 var itemPrice = 21.99;
 var taxRate = 0.09;
 var shippingCost = 6.66;
+
+var populationUSA = 331000000; 
+var populationCalifornia = 39500000; 
 //
 // 2. Perform calculations:
 //    - at least one addition
@@ -110,8 +113,7 @@ var formattedSubtotal = subtotal.toFixed(2);
 var formattedTaxAmount = taxAmount.toFixed(2);
 var formattedTotalCost = totalCost.toFixed(2);
 
-var populationUSA = 331000000; // Example population value
-var populationCalifornia = 39500000; // Example population value
+
 var formattedPopulationUSA = populationUSA.toLocaleString(); // Format with commas
 var formattedPopulationCalifornia = populationCalifornia.toLocaleString(); // Format with commas
 
@@ -124,6 +126,7 @@ var mathResult = "Item Price: $" + itemPrice.toFixed(2) + "<br>"
                + "Total Cost: $" + formattedTotalCost;
 // 5. Display the results inside the element with id="mathOutput"
 document.getElementById("mathOutput").innerHTML = mathResult;
+
 
 var populationResult = "The population of the USA is approximately " + formattedPopulationUSA + ".<br>"
                      + "The population of California is approximately " + formattedPopulationCalifornia + ".";
