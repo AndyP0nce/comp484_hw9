@@ -110,6 +110,11 @@ var formattedSubtotal = subtotal.toFixed(2);
 var formattedTaxAmount = taxAmount.toFixed(2);
 var formattedTotalCost = totalCost.toFixed(2);
 
+var populationUSA = 331000000; // Example population value
+var populationCalifornia = 39500000; // Example population value
+var formattedPopulationUSA = populationUSA.toLocaleString(); // Format with commas
+var formattedPopulationCalifornia = populationCalifornia.toLocaleString(); // Format with commas
+
 //
 // 4. Build a string showing your results
 var mathResult = "Item Price: $" + itemPrice.toFixed(2) + "<br>"
@@ -119,6 +124,10 @@ var mathResult = "Item Price: $" + itemPrice.toFixed(2) + "<br>"
                + "Total Cost: $" + formattedTotalCost;
 // 5. Display the results inside the element with id="mathOutput"
 document.getElementById("mathOutput").innerHTML = mathResult;
+
+var populationResult = "The population of the USA is approximately " + formattedPopulationUSA + ".<br>"
+                     + "The population of California is approximately " + formattedPopulationCalifornia + ".";
+document.getElementById("populationOutput").innerHTML = populationResult;
 
 // ==========================
 // Part 4: Conditionals
